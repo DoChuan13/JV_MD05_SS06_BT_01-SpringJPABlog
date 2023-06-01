@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Blog Detail</h1>
+<a th:href="@{/}">Back</a>
+<table border="1" style="width: 100%;">
+    <tr>
+        <th>STT</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    <tr th:object="${blog}">
+        <td th:text="${blog.id}"></td>
+        <td th:text="${blog.title}"></td>
+        <td th:text="${blog.content}"></td>
+    </tr>
+</table>
+</body>
+</html>
